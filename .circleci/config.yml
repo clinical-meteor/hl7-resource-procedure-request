@@ -118,7 +118,7 @@ jobs:
     - run: cd ../baseline && meteor add dispatch:mocha practicalmeteor:chai
     - run: cd ../baseline && meteor add clinical:hl7-resource-procedure-request 
     - run: cd ../baseline && mkdir imports 
-    - run: cp tests/ProcedureRequests.tests.js ../baseline/imports/
+    - run: cp tests/ProcedureRequestTests.tests.js ../baseline/imports/
 
 
     #- run the app

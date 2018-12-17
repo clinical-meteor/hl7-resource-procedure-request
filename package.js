@@ -29,6 +29,10 @@ Package.onUse(function (api) {
   api.use('matb33:collection-hooks@0.7.15');
   api.use('clinical:alert@2.1.3')
 
+  if(Package['clinical:fhir-vault-server']){
+    api.use('clinical:fhir-vault-server@0.0.3', ['client', 'server'], {weak: true});
+  }
+
 
   api.addFiles('lib/hl7-resource-procedure-request.js', ['client', 'server']);
   api.addFiles('server/rest.js', 'server');

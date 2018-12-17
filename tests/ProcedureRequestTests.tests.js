@@ -30,6 +30,6 @@ describe('clinical:hl7-resource-practitioner', function () {
     //console.log('afterEach');
   });
   it('exists globally', function () {
-    expect(Procedures).to.exist;
+    expect(ProcedureRequests).to.exist;
   });
 });
